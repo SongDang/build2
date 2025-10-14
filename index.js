@@ -55,9 +55,9 @@ window.addEventListener("load", function ()
   var buildUrl = "Build";
   var loaderUrl = buildUrl + "/build2.loader.js";
   var config = {
-    dataUrl: buildUrl + "/build2.data.br",
-    frameworkUrl: buildUrl + "/build2.framework.js.br",
-    codeUrl: buildUrl + "/build2.wasm.br",
+    dataUrl: buildUrl + "/build2.data",
+    frameworkUrl: buildUrl + "/build2.framework.js",
+    codeUrl: buildUrl + "/build2.wasm",
     streamingAssetsUrl: "StreamingAssets",
     companyName: "DefaultCompany",
     productName: "My project",

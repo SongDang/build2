@@ -1,9 +1,9 @@
 const cacheName = "DefaultCompany-My project-0.1.0";
 const contentToCache = [
     "Build/build2.loader.js",
-    "Build/build2.framework.js.br",
-    "Build/build2.data.br",
-    "Build/build2.wasm.br",
+    "Build/build2.framework.js",
+    "Build/build2.data",
+    "Build/build2.wasm",
     "TemplateData/style.css"
 
 ];
