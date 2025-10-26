@@ -96,10 +96,6 @@ window.addEventListener("load", function ()
     {
       unityInstanceRef = unityInstance;
       loadingBar.style.display = "none";
-
-      if (window.TelegramUserData) {
-        unityInstance.SendMessage('GameManager', 'OnTelegramLogin', window.TelegramUserData);
-      }
     }
     ).catch((message) => 
     {
