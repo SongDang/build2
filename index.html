@@ -22,6 +22,25 @@
       </div>
       <div id="unity-warning"> </div>
     </div>
+
+    <script>
+      window.addEventListener("load", function () {
+        if (window.Telegram?.WebApp) {
+          const tg = window.Telegram.WebApp;
+          tg.ready();
+
+          const user = tg.initDataUnsafe?.user;
+          if (user) {
+            console.log("Telegram user:", user);
+            const json = JSON.stringify(user);
+            window.TelegramUserData = json;
+          } else {
+            console.warn("No Telegram user data");
+          }
+        }
+      });
+    </script>
+
     <script src="index.js"></script>
   </body>
 </html>
